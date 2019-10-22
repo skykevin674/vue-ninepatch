@@ -4,13 +4,17 @@
   "private": false,
   "main": "dist/NinePatch.common.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name NinePatch ./src/components/index.js"
   },
+  "homepage": "https://skykevin674.github.io/",
   "dependencies": {
     "core-js": "^3.1.2",
+    "gh-pages": "^2.1.1",
     "vue": "^2.6.10",
     "vue-grid-layout": "^2.3.6"
   },
